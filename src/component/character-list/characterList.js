@@ -8,7 +8,7 @@ function CharacterList(props) {
     const queryParam = new URLSearchParams(useLocation().search).get('id');
     useEffect(() => {
         goToPage("https://rickandmortyapi.com/api/episode/"+queryParam);
-    }, []);
+    }, [queryParam]);
     const goToPage = (url) => {
         fetch(url)
             .then(res => res.json())

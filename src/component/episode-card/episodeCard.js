@@ -8,12 +8,12 @@ function EpisodeCard({episode}) {
     };
     return (
         <div>
-            <a class="list-group-item list-group-item-action" onClick={goToEpisode} >
+            <span class="list-group-item list-group-item-action" onClick={goToEpisode} >
             <div class="d-flex w-100 justify-content-between"  >
                 <h5 class="mb-1">{episode.episode} - { episode.name }</h5>
                 <small> { episode.air_date }</small>
             </div>
-            </a>
+            </span>
         </div>
     )
 }

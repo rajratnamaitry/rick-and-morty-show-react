@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import EpisodeCard from './../episode-card/episodeCard'
 
 function EpisodeList() {
-    const [error, setError] = useState(null);
     const [episodeList, setEpisodeList] = useState([]);
     const [info, setInfo] = useState({});
 

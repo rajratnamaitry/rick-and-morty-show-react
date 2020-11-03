@@ -5,7 +5,7 @@ function CharacterCard({ url }) {
     const [character, setCharacter] = useState([]);
     useEffect(() => {
         loadChar(url);
-    }, []);
+    }, [url]);
     const loadChar = (e) => {
         fetch(e)
             .then(res => res.json())
