@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path={ "/" | "/episode" } >
+          <Route path={["/","/episode"]} exact={true} >
             <EpisodeList></EpisodeList>
           </Route>
           <Route path="/character" >
